@@ -22,5 +22,5 @@
 
 :root {
     --font-1: "Montserrat", Arial, sans-serif;
-    --font-2: "Adero";
+    --font-2: "Adero", "Montserrat", sans-serif;
 }
