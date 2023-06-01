@@ -85,7 +85,7 @@
 @media (max-width: 1440px) {
     .sobre-conteudo {
         grid-template-columns: 1fr 1fr;
-        gap: 0 5rem;
+        gap: 0 4rem;
         padding-top: 8rem;
     }
     .sobre-conteudo .grafico {
