@@ -1,0 +1,125 @@
+/* NOTÍCIAS */
+
+.noticias {
+    background-color: var(--p7);
+    height: 100vh;
+    position: relative;
+}
+
+.noticias-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 12rem;
+}
+
+.noticias-conteudo h2,
+.noticias-conteudo p {
+    grid-column: 1;
+}
+
+.noticias-conteudo h2 {
+    font-family: var(--font-2);
+    font-size: 1.25rem;
+    color: var(--p4);
+    margin-bottom: 1rem;
+}
+
+.noticias-conteudo > p {
+    font-family: var(--font-1);
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--p2);
+    margin-bottom: 0.5rem;
+    max-width: 27rem;
+}
+
+.noticias-conteudo .card-group {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.card-group {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+
+    overflow-x: auto;
+    padding-bottom: 1.5rem;
+    padding-left: 0.5rem;
+    margin-right: calc(-49.7vw + 100%);
+}
+
+.card-group:last-child {
+    padding-right: 1.5rem;
+}
+
+.card {
+    min-width: 22rem;
+    background-color: var(--p1);
+    border-radius: 1.25rem;
+    padding: 0.75rem;
+}
+
+.card:hover {
+    background-color: var(--c00);
+    box-shadow: 0px 4px 8px rgba(12, 19, 24, 0.5);
+    transition: 0.3s ease;
+}
+
+.card > picture {
+    display: block;
+    height: 12rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content span {
+    background-color: var(--p5);
+    max-width: max-content;
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.25rem;
+    font-family: var(--font-1);
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: var(--p2);
+    margin-bottom: 0.25rem;
+}
+
+.card-content h3 {
+    font-family: var(--font-1);
+    font-size: 1rem;
+    color: var(--p7);
+    margin-bottom: 0.75rem;
+}
+
+.card-content p {
+    font-family: var(--font-1);
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: var(--c60);
+    margin-bottom: 0.25rem;
+}
+
+.card-content button {
+    max-width: max-content;
+    color: var(--p6);
+    cursor: pointer;
+}
+
+.card-content button:hover {
+    color: var(--p5);
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1440px) {
+    .noticias-conteudo {
+        padding-top: 8rem;
+    }
+}

@@ -1,0 +1,16 @@
+/* COMPONENTES */
+@import url("./css/componentes/tipografia.css");
+@import url("./css/componentes/cores.css");
+
+/* GLOBAL */
+@import url("./css/global.css");
+
+/* SESSÕES */
+
+@import url("./css/inicio.css");
+@import url("./css/produtos.css");
+@import url("./css/sobre.css");
+@import url("./css/equipe.css");
+@import url("./css/localizacao.css");
+@import url("./css/noticias.css");
+@import url("./css/contatos.css");

@@ -1,0 +1,81 @@
+/* SOBRE */
+
+.sobre {
+    background-color: var(--p7);
+    min-height: 100vh;
+    position: relative;
+}
+
+.sobre-conteudo {
+    display: grid;
+    grid-template-columns: 5fr 2fr 5fr;
+    padding-top: 12rem;
+}
+
+.sobre-conteudo h2,
+.sobre-conteudo p {
+    grid-column: 1;
+}
+
+.sobre-conteudo .foto {
+    grid-column: 1;
+    grid-row: 5/7;
+    align-self: end;
+    margin-top: 4rem;
+}
+
+.sobre-conteudo .grafico {
+    grid-column: 3;
+    grid-row: 4/6;
+}
+
+.sobre-conteudo .documentos {
+    grid-column: 3;
+}
+
+.sobre-conteudo h2 {
+    font-family: var(--font-2);
+    font-size: 1.25rem;
+    color: var(--p4);
+    margin-bottom: 1rem;
+}
+
+.sobre-conteudo p {
+    font-family: var(--font-1);
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--p2);
+    margin-bottom: 0.5rem;
+    max-width: 30rem;
+}
+
+.documentos h3 {
+    font-family: var(--font-2);
+    font-size: 1rem;
+    color: var(--p2);
+    margin-bottom: 0.75rem;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.botoes > button {
+    background-color: var(--p5);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+
+    font-family: var(--font-2);
+    font-size: 0.625rem;
+    color: var(--p1);
+    cursor: pointer;
+}
+
+.botoes > button:hover {
+    background-color: var(--p4);
+    color: var(--c00);
+    transition: ease 0.3s;
+}

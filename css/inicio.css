@@ -1,0 +1,33 @@
+/* INICIO */
+
+.inicio {
+    background: var(--p7) url(/css/img/imagem-1.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.inicio-conteudo {
+    padding-top: 45vh;
+    max-width: 49rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.inicio-conteudo picture {
+    margin-bottom: 3rem;
+}
+
+.inicio-conteudo p {
+    font-family: var(--font-2);
+    font-size: 0.875rem;
+    color: var(--p2);
+    text-align: center;
+}
+
+.inicio-conteudo p > em {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 600;
+}

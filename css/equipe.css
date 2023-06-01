@@ -1,0 +1,47 @@
+/* EQUIPE */
+
+.equipe {
+    background-color: var(--p1);
+    min-height: 100vh;
+    position: relative;
+}
+
+.equipe-conteudo {
+    display: grid;
+    grid-template-columns: 5fr 2fr 5fr;
+    padding-top: 12rem;
+}
+
+.equipe-conteudo h2,
+.equipe-conteudo p {
+    grid-column: 1;
+}
+
+.equipe-conteudo .foto {
+    grid-column: 1;
+    grid-row: 4/5;
+    align-self: end;
+    margin-top: 2rem;
+}
+
+.equipe-conteudo .grafico {
+    grid-column: 3;
+    grid-row: 1/5;
+    margin-top: 2rem;
+}
+
+.equipe-conteudo h2 {
+    font-family: var(--font-2);
+    font-size: 1.25rem;
+    color: var(--p6);
+    margin-bottom: 1rem;
+}
+
+.equipe-conteudo p {
+    font-family: var(--font-1);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--p7);
+    margin-bottom: 1.125rem;
+    max-width: 28rem;
+}
