@@ -1,7 +1,7 @@
 /* INICIO */
 
 .inicio {
-    background: var(--p7) url(/css/img/imagem-1.jpg) no-repeat;
+    background: var(--p7) url(./img/imagem-1.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
 }
