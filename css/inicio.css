@@ -10,7 +10,7 @@
 
 .inicio-conteudo {
     padding-top: 45vh;
-    max-width: 49rem;
+    max-width: 51rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +24,7 @@
 .inicio-conteudo p {
     font-family: var(--font-2);
     font-size: 0.875rem;
+    line-height: 1.3;
     color: var(--p2);
     text-align: center;
 }
@@ -42,9 +43,5 @@
 
     .inicio-conteudo picture {
         margin-bottom: 2.5rem;
-    }
-
-    .inicio-conteudo p {
-        font-size: 0.75rem;
     }
 }
