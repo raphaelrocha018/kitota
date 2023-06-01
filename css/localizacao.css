@@ -2,7 +2,7 @@
 
 .localizacao {
     background-color: var(--p2);
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -20,7 +20,7 @@
 .localizacao .foto {
     position: absolute;
     bottom: 7rem;
-    width: 40%;
+    max-width: 40%;
 }
 
 .localizacao-conteudo .mapa {
@@ -33,7 +33,7 @@
     cursor: default;
 }
 
-.localizacao-conteudo figcaption {
+/* .localizacao-conteudo figcaption {
     position: absolute;
     padding-top: 14.5rem;
     padding-inline: 2rem;
@@ -49,7 +49,7 @@
 
 .localizacao-conteudo figcaption:hover {
     color: var(--p5);
-}
+} */
 
 .localizacao-conteudo h2 {
     font-family: var(--font-2);
@@ -72,4 +72,21 @@
     grid-column: 2;
     margin-top: 2rem;
     justify-self: right;
+}
+
+/* RESPONSIVO LOCALIZAÇÃO */
+
+@media (max-width: 1440px) {
+    .localizacao-conteudo {
+        padding-top: 8rem;
+    }
+
+    .localizacao .foto {
+        bottom: 3rem;
+    }
+
+    .localizacao-conteudo .mapa {
+        max-width: 85%;
+        /* justify-self: start; */
+    }
 }

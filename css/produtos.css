@@ -21,7 +21,7 @@
 .produtos-conteudo > div > img {
     max-width: 40%;
     position: absolute;
-    top: -48px;
+    top: -56px;
     left: 160px;
 }
 
@@ -39,7 +39,7 @@
     font-weight: 500;
     color: var(--p5);
     background-color: var(--c00);
-    max-width: 60%;
+    max-width: 65%;
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 0.75rem;
@@ -67,6 +67,7 @@
 @media (max-width: 1440px) {
     .produtos-conteudo {
         padding-top: 8rem;
+        grid-template-columns: 4.5fr 4.5fr 3fr;
         gap: 0 0;
     }
 
@@ -88,11 +89,11 @@
 
     .produtos-conteudo p {
         font-size: 0.75rem;
-        max-width: 20rem;
+        max-width: 22rem;
     }
 
     .produtos picture {
-        width: 60%;
+        max-width: 57%;
     }
 
     .produto-ferro {

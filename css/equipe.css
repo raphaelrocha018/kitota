@@ -2,7 +2,7 @@
 
 .equipe {
     background-color: var(--p1);
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -44,4 +44,40 @@
     color: var(--p7);
     margin-bottom: 1.125rem;
     max-width: 28rem;
+}
+
+/* RESPONSIVO EQUIPE */
+
+@media (max-width: 1440px) {
+    .equipe-conteudo {
+        grid-template-columns: 1fr 1fr;
+        gap: 0 4rem;
+        padding-top: 8rem;
+        padding-bottom: 2rem;
+    }
+
+    .equipe-conteudo .foto {
+        grid-row: 3/4;
+        margin-top: 0;
+        padding-right: 5rem;
+        align-content: end;
+    }
+
+    .equipe-conteudo .grafico {
+        grid-column: 2;
+        grid-row: 2/4;
+        margin-top: 0;
+        max-width: 90%;
+    }
+
+    .equipe-conteudo h2 {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .equipe-conteudo p {
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+        max-width: 22rem;
+    }
 }
