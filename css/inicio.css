@@ -33,3 +33,18 @@
     font-style: normal;
     font-weight: 600;
 }
+
+@media (max-width: 1440px) {
+    .inicio-conteudo {
+        max-width: 40rem;
+        gap: 1.25rem;
+    }
+
+    .inicio-conteudo picture {
+        margin-bottom: 2.5rem;
+    }
+
+    .inicio-conteudo p {
+        font-size: 0.75rem;
+    }
+}

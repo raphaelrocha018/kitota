@@ -122,4 +122,8 @@
     .noticias-conteudo {
         padding-top: 8rem;
     }
+
+    .card-group {
+        margin-right: calc(-49.5vw + 100%);
+    }
 }

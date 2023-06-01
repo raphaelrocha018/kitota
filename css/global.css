@@ -79,6 +79,8 @@ html {
     transition: ease 0.3s;
 }
 
+/* HEADER */
+
 .header {
     position: absolute;
     width: 100%;
@@ -86,7 +88,6 @@ html {
 
 .header div {
     padding-top: 5rem;
-    padding-bottom: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -110,15 +111,6 @@ html {
     transition: ease 0.2s;
 }
 
-/* .header menu li:hover::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: var(--p5);
-    transition: 0.2s;
-} */
-
 .btn1 {
     font-family: var(--font-2);
     font-size: 0.75rem;
@@ -129,11 +121,30 @@ html {
     padding: 0.75rem 2rem;
     border-radius: 0.5rem;
 }
+
 .btn1:hover {
     background-color: var(--p5);
     color: var(--p1);
     transition: 0.2s;
 }
+
+/* RESPONSIVO HEADER */
+
+@media (max-width: 1440px) {
+    .header div {
+        padding-top: 3em;
+    }
+
+    .header menu {
+        gap: 2rem;
+    }
+
+    .btn1 {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+/* FOOTER */
 
 .footer {
     height: 15rem;
@@ -155,6 +166,23 @@ html {
     font-size: 0.875rem;
 
     color: var(--p2);
+}
+
+/* RESPONSIVO FOOTER */
+
+@media (max-width: 1440px) {
+    .footer {
+        height: 10rem;
+    }
+
+    .footer-conteudo {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    .footer-conteudo p {
+        font-size: 0.75rem;
+    }
 }
 
 /* BARRA DE ROLAGEM NOTÍCIAS */
