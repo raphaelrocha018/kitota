@@ -2,7 +2,7 @@
 
 .sobre {
     background-color: var(--p7);
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -78,4 +78,44 @@
     background-color: var(--p4);
     color: var(--c00);
     transition: ease 0.3s;
+}
+
+/* RESPONSIVO SOBRE */
+
+@media (max-width: 1440px) {
+    .sobre-conteudo {
+        grid-template-columns: 1fr 1fr;
+        gap: 0 5rem;
+        padding-top: 8rem;
+    }
+    .sobre-conteudo .grafico {
+        grid-column: 2;
+    }
+
+    .sobre-conteudo .documentos {
+        grid-column: 2;
+    }
+
+    .sobre-conteudo .foto {
+        margin-top: 2rem;
+        max-width: 80%;
+    }
+
+    .sobre-conteudo h2 {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .sobre-conteudo p {
+        margin-bottom: 0.25rem;
+        max-width: 30rem;
+    }
+
+    .documentos h3 {
+        font-size: 0.875rem;
+    }
+
+    .botoes > button {
+        padding: 0.5rem 0.5rem;
+    }
 }
