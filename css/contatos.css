@@ -2,7 +2,7 @@
 
 .contatos {
     background-color: var(--p1);
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -112,7 +112,7 @@
     padding: 0.75rem 1rem;
     color: var(--c80);
     border-radius: 0.5rem;
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .formulario input:focus,
@@ -176,4 +176,75 @@
     background-color: var(--p5);
     color: var(--c00);
     transition: ease 0.3s;
+}
+
+/* RESPONSIVO CONTATOS */
+
+@media (max-width: 1440px) {
+    .contatos-conteudo {
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+
+    .contatos-conteudo h2 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contatos-conteudo > p {
+        font-size: 0.75rem;
+        margin-bottom: 0;
+        max-width: 20rem;
+        line-height: 1.3;
+    }
+
+    .contatos-conteudo address {
+        font-size: 0.75rem;
+        font-weight: 600;
+        align-self: center;
+    }
+
+    .contatos-conteudo address p:first-child {
+        margin-bottom: 1rem;
+    }
+
+    .contatos-conteudo address::before {
+        width: 4px;
+        height: 100%;
+    }
+
+    .redes-sociais {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .redes-sociais h3 {
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        max-width: 15rem;
+    }
+
+    .redes-sociais ul {
+        gap: 0.75rem;
+    }
+
+    .formulario label {
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+
+    .formulario input,
+    .formulario textarea {
+        font-size: 0.875rem;
+        font-weight: 500;
+        padding: 0.5rem 0.875rem;
+    }
+
+    .formulario button {
+        font-weight: 500;
+        font-size: 0.75rem;
+
+        padding: 0.75rem 0.75rem;
+    }
 }

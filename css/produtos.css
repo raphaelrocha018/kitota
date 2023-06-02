@@ -52,6 +52,7 @@
     color: var(--p7);
     margin-bottom: 0.5rem;
     max-width: 30rem;
+    line-height: 1.3;
 }
 
 .produtos picture {

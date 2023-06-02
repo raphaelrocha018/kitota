@@ -56,11 +56,15 @@
     margin-bottom: 0.75rem;
 }
 
+.documentos {
+    justify-self: end;
+    text-align: end;
+}
+
 .botoes {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
-    justify-content: space-between;
 }
 
 .botoes > button {
@@ -112,6 +116,7 @@
         font-size: 0.75rem;
         margin-bottom: 0.5rem;
         max-width: 27rem;
+        line-height: 1.3;
     }
 
     .documentos h3 {
