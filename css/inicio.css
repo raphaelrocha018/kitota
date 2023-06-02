@@ -47,7 +47,7 @@
 
     .inicio-conteudo p {
         font-size: 0.75rem;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 1.4;
     }
 }
@@ -60,7 +60,6 @@
 
     .inicio-conteudo p {
         font-size: 0.875rem;
-        font-weight: 500;
         line-height: 1.5;
     }
 }
