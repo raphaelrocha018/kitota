@@ -51,3 +51,16 @@
         line-height: 1.4;
     }
 }
+
+@media (max-width: 1080px) {
+    .inicio-conteudo {
+        padding-top: 36vh;
+        max-width: 36rem;
+    }
+
+    .inicio-conteudo p {
+        font-size: 0.875rem;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+}
