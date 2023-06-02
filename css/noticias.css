@@ -27,7 +27,7 @@
 .noticias-conteudo > p {
     font-family: var(--font-1);
     font-size: 0.875rem;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--p2);
     margin-bottom: 0.5rem;
     max-width: 27rem;
@@ -121,9 +121,53 @@
 @media (max-width: 1440px) {
     .noticias-conteudo {
         padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
+
+    .noticias-conteudo h2 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .noticias-conteudo > p {
+        font-size: 0.75rem;
+        max-width: 23rem;
     }
 
     .card-group {
+        gap: 1.25rem;
+        padding-bottom: 1.25rem;
+        padding-left: 0.25rem;
         margin-right: calc(-49.5vw + 100%);
+    }
+
+    .card-group:last-child {
+        padding-right: 1.25rem;
+    }
+
+    .card {
+        min-width: 20rem;
+    }
+
+    .card > picture {
+        height: 10rem;
+    }
+
+    .card-content {
+        padding: 0.75rem;
+    }
+
+    .card-content span {
+        font-weight: 600;
+        font-size: 0.625rem;
+    }
+
+    .card-content h3 {
+        font-size: 0.875rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .card-content p {
+        font-size: 0.75rem;
     }
 }
