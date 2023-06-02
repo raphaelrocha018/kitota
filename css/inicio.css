@@ -5,6 +5,7 @@
     background-image: url(../css/img/imagem-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
 }
 
@@ -53,6 +54,10 @@
 }
 
 @media (max-width: 1080px) {
+    .inicio {
+        min-height: 100vh;
+    }
+
     .inicio-conteudo {
         padding-top: 36vh;
         max-width: 36rem;
