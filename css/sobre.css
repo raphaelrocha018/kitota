@@ -92,6 +92,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 0 4rem;
         padding-top: 8rem;
+        padding-bottom: 4rem;
     }
 
     .sobre-conteudo .grafico {
@@ -125,5 +126,41 @@
 
     .botoes > button {
         padding: 0.5rem 0.5rem;
+    }
+}
+
+@media (max-width: 1080px) {
+    .sobre {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .sobre-conteudo {
+        gap: 0 1rem;
+    }
+
+    .sobre-conteudo .foto {
+        grid-column: 2;
+        grid-row: 1/5;
+        margin-top: 0;
+        max-width: 100%;
+        align-self: flex-start;
+    }
+
+    .sobre-conteudo .grafico {
+        grid-column: 1/-1;
+        grid-row: 5;
+        max-width: 70%;
+        margin-top: 3rem;
+        justify-self: center;
+    }
+
+    .sobre-conteudo .documentos {
+        margin-top: 3rem;
+    }
+
+    .sobre-conteudo p {
+        font-size: 0.875rem;
+        max-width: auto;
     }
 }
