@@ -134,10 +134,41 @@
         padding-top: 6.25rem;
         grid-row: 4;
         grid-column: 1/-1;
+    }
+}
 
-        /* position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 125vh; */
+@media (max-width: 720px) {
+    .produtos-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .produtos-conteudo > div {
+        grid-row: auto;
+        margin-bottom: 2rem;
+    }
+
+    .produtos-conteudo > div > img {
+        max-width: 25%;
+        top: -24px;
+        left: 128px;
+    }
+
+    .produtos-conteudo h3 {
+        max-width: 45%;
+        padding: 1rem;
+        margin-bottom: 0.875rem;
+    }
+
+    .produtos-conteudo p {
+        max-width: 100%;
+        font-size: 0.875rem;
+    }
+
+    .produto-ferro {
+        margin-left: 0;
+    }
+
+    .produtos picture {
+        padding-top: 4rem;
     }
 }

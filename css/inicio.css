@@ -55,10 +55,6 @@
 }
 
 @media (max-width: 1080px) {
-    .inicio {
-        min-height: 100vh;
-    }
-
     .inicio-conteudo {
         padding-top: 36vh;
         max-width: 36rem;
@@ -67,5 +63,12 @@
     .inicio-conteudo p {
         font-size: 0.875rem;
         line-height: 1.5;
+    }
+}
+
+@media (max-width: 1080px) {
+    .inicio-conteudo {
+        padding-top: 25vh;
+        max-width: 100%;
     }
 }

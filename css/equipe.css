@@ -107,3 +107,26 @@
         max-width: 19rem;
     }
 }
+
+@media (max-width: 720px) {
+    .equipe-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .equipe-conteudo p {
+        font-size: 0.875rem;
+        max-width: 100%;
+    }
+
+    .equipe-conteudo .foto {
+        grid-column: 1;
+        grid-row: 3;
+        margin-top: 2rem;
+    }
+
+    .equipe-conteudo .grafico {
+        grid-column: 1;
+        grid-row: 4;
+        max-width: 100%;
+    }
+}

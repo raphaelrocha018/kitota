@@ -47,7 +47,7 @@ html {
 
 @media (max-width: 720px) {
     .container {
-        padding: 0 2rem;
+        padding: 0 1.5rem;
     }
 }
 
@@ -180,6 +180,12 @@ html {
 
     .btn1 {
         padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .header-conteudo picture {
+        display: none;
     }
 }
 

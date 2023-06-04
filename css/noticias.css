@@ -189,6 +189,18 @@
     }
 
     .noticias-conteudo > p {
-        max-width: auto;
+        font-size: 0.875rem;
+        max-width: 100%;
+    }
+
+    .card-group {
+        gap: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1.5rem;
+        margin-top: 15vh;
+    }
+
+    .card-group:last-child {
+        padding-right: 1.5rem;
     }
 }

@@ -131,11 +131,6 @@
 }
 
 @media (max-width: 1080px) {
-    .sobre {
-        height: auto;
-        min-height: 100vh;
-    }
-
     .sobre-conteudo {
         gap: 0 1rem;
     }
@@ -164,5 +159,33 @@
 
     .sobre-conteudo p {
         max-width: 19rem;
+    }
+}
+
+@media (max-width: 1080px) {
+    .sobre-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-conteudo p {
+        font-size: 0.875rem;
+        max-width: 100%;
+    }
+
+    .sobre-conteudo .foto {
+        grid-column: 1;
+        grid-row: 5;
+        margin-top: 2rem;
+    }
+
+    .sobre-conteudo .grafico {
+        grid-column: 1;
+        grid-row: 6;
+        max-width: 100%;
+    }
+
+    .sobre-conteudo .documentos {
+        grid-row: 7;
+        justify-self: start;
     }
 }
