@@ -72,8 +72,7 @@
 }
 
 .redes-sociais {
-    margin-top: 6rem;
-    margin-bottom: 4rem;
+    margin-top: 4rem;
 }
 
 .redes-sociais h3 {
@@ -184,7 +183,6 @@
 @media (max-width: 1440px) {
     .contatos-conteudo {
         padding-top: 8rem;
-        padding-bottom: 4rem;
     }
 
     .contatos-conteudo h2 {
@@ -251,5 +249,40 @@
         font-size: 0.75rem;
 
         padding: 0.75rem 0.75rem;
+    }
+}
+
+@media (max-width: 1080px) {
+    .contatos-conteudo {
+        gap: 0 2rem;
+    }
+
+    .contatos-conteudo address {
+        grid-row: 6;
+        margin-bottom: 4rem;
+    }
+
+    .contatos-conteudo > div {
+        grid-row: 7;
+        grid-column: 1;
+    }
+
+    .contatos-conteudo > p {
+        grid-column: 1/-1;
+    }
+
+    .contatos-conteudo form {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .contatos-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .contatos-conteudo form {
+        grid-column: 1;
     }
 }
