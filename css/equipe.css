@@ -2,7 +2,7 @@
 
 .equipe {
     background-color: var(--p1);
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: 5fr 2fr 5fr;
     padding-top: 12rem;
+    padding-bottom: 4rem;
 }
 
 .equipe-conteudo h2,
@@ -53,7 +54,6 @@
         grid-template-columns: 1fr 1fr;
         gap: 0 4rem;
         padding-top: 8rem;
-        padding-bottom: 2rem;
     }
 
     .equipe-conteudo .foto {
@@ -84,14 +84,8 @@
 }
 
 @media (max-width: 1080px) {
-    .equipe {
-        height: auto;
-        min-height: 100vh;
-    }
-
     .equipe-conteudo {
         gap: 0 1rem;
-        padding-bottom: 4rem;
     }
 
     .equipe-conteudo .foto {
@@ -105,13 +99,11 @@
         grid-column: 1/-1;
         grid-row: 5;
         margin-top: 3rem;
-        max-width: 55%;
+        max-width: 70%;
         justify-self: center;
     }
 
     .equipe-conteudo p {
-        font-size: 0.875rem;
-        margin-bottom: 0.5rem;
-        max-width: auto;
+        max-width: 19rem;
     }
 }

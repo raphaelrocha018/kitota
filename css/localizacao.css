@@ -2,7 +2,7 @@
 
 .localizacao {
     background-color: var(--p2);
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 12rem;
+    padding-bottom: 4rem;
 }
 
 .localizacao-conteudo h2,
@@ -20,6 +21,7 @@
 .localizacao .foto {
     position: absolute;
     bottom: 7rem;
+    left: 0;
     max-width: 40%;
 }
 
@@ -112,5 +114,49 @@
     .localizacao-conteudo picture {
         margin-top: 3rem;
         max-width: 75%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .localizacao {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .localizacao-conteudo {
+        gap: 0 1rem;
+    }
+
+    .localizacao .foto {
+        position: relative;
+        grid-column: 2;
+        grid-row: 2/4;
+        max-width: 100%;
+        bottom: initial;
+        align-self: end;
+    }
+
+    .localizacao-conteudo .mapa {
+        grid-column: 1/-1;
+        grid-row: 4;
+        max-width: 85%;
+        padding-left: 8rem;
+        padding-top: 4rem;
+    }
+
+    .mapa figcaption {
+        padding-top: 14rem;
+        padding-left: 8.5rem;
+        font-size: 0.875rem;
+    }
+
+    .localizacao-conteudo p {
+        max-width: 19rem;
+    }
+
+    .localizacao-conteudo picture {
+        margin-top: 2rem;
+        max-width: 100%;
+        grid-column: 1;
     }
 }

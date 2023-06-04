@@ -2,7 +2,7 @@
 
 .sobre {
     background-color: var(--p7);
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: 5fr 2fr 5fr;
     padding-top: 12rem;
+    padding-bottom: 4rem;
 }
 
 .sobre-conteudo h2,
@@ -150,17 +151,18 @@
     .sobre-conteudo .grafico {
         grid-column: 1/-1;
         grid-row: 5;
-        max-width: 70%;
+        max-width: 80%;
         margin-top: 3rem;
         justify-self: center;
     }
 
     .sobre-conteudo .documentos {
         margin-top: 3rem;
+        grid-column: 1;
+        text-align: start;
     }
 
     .sobre-conteudo p {
-        font-size: 0.875rem;
-        max-width: auto;
+        max-width: 19rem;
     }
 }

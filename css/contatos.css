@@ -2,7 +2,7 @@
 
 .contatos {
     background-color: var(--p1);
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 12rem;
+    padding-bottom: 4rem;
 }
 
 .contatos-conteudo h2,
