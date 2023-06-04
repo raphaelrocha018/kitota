@@ -282,4 +282,12 @@
     .contatos-conteudo form {
         grid-column: 1;
     }
+
+    .formulario {
+        gap: 0.5rem 1rem;
+    }
+
+    .redes-sociais ul {
+        gap: 1rem;
+    }
 }
