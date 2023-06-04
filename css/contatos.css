@@ -253,10 +253,6 @@
 }
 
 @media (max-width: 1080px) {
-    .contatos-conteudo {
-        gap: 0 2rem;
-    }
-
     .contatos-conteudo address {
         grid-row: 6;
         margin-bottom: 4rem;
