@@ -160,3 +160,33 @@
         grid-column: 1;
     }
 }
+
+@media (max-width: 720px) {
+    .localizacao-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .localizacao-conteudo p {
+        max-width: 100%;
+    }
+
+    .localizacao-conteudo .mapa {
+        grid-column: 1;
+        grid-row: 5;
+        max-width: 100%;
+        padding-left: 0;
+    }
+    .localizacao .foto {
+        grid-column: 1;
+        grid-row: 4;
+        margin-top: 2rem;
+    }
+
+    .mapa figcaption {
+        padding-left: 0.5rem;
+    }
+
+    .localizacao-conteudo picture {
+        grid-row: 6;
+    }
+}

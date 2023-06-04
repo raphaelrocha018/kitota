@@ -182,3 +182,13 @@
         padding-right: 2rem;
     }
 }
+
+@media (max-width: 720px) {
+    .noticias-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .noticias-conteudo > p {
+        max-width: auto;
+    }
+}
