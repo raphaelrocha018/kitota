@@ -284,7 +284,7 @@
     }
 
     .formulario {
-        gap: 0.5rem 1rem;
+        grid-template-columns: 1fr;
     }
 
     .redes-sociais ul {
