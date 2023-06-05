@@ -118,22 +118,16 @@
 }
 
 @media (max-width: 1080px) {
-    .localizacao {
-        height: auto;
-        min-height: 100vh;
-    }
-
     .localizacao-conteudo {
         gap: 0 1rem;
     }
 
     .localizacao .foto {
-        position: relative;
-        grid-column: 2;
-        grid-row: 2/4;
-        max-width: 100%;
-        bottom: initial;
-        align-self: end;
+        position: absolute;
+        top: 8rem;
+        right: 0;
+        left: initial;
+        max-width: 45%;
     }
 
     .localizacao-conteudo .mapa {
@@ -141,23 +135,26 @@
         grid-row: 4;
         max-width: 85%;
         padding-left: 8rem;
-        padding-top: 4rem;
+        padding-top: 6rem;
     }
 
     .mapa figcaption {
-        padding-top: 14rem;
+        padding-top: 16rem;
         padding-left: 8.5rem;
         font-size: 0.875rem;
     }
 
     .localizacao-conteudo p {
-        max-width: 19rem;
+        grid-column: 1/-1;
+        font-size: 0.875rem;
+        max-width: 52%;
     }
 
     .localizacao-conteudo picture {
-        margin-top: 2rem;
-        max-width: 100%;
-        grid-column: 1;
+        margin-top: 3rem;
+        max-width: 75%;
+        grid-column: 1/-1;
+        justify-self: center;
     }
 }
 
@@ -166,9 +163,13 @@
         grid-template-columns: 1fr;
     }
 
+    .equipe-conteudo h2 {
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+    }
+
     .localizacao-conteudo p {
-        font-size: 0.875rem;
-        max-width: 100%;
+        max-width: 37ch;
     }
 
     .localizacao-conteudo .mapa {
@@ -176,18 +177,27 @@
         grid-row: 5;
         max-width: 100%;
         padding-left: 0;
+        padding-top: 4rem;
     }
+
     .localizacao .foto {
-        grid-column: 1;
+        position: relative;
         grid-row: 4;
         margin-top: 2rem;
+        max-width: 100%;
+        top: 0;
+        bottom: 0;
     }
 
     .mapa figcaption {
         padding-left: 0.5rem;
+        padding-top: 12.5rem;
+        font-size: 0.75rem;
     }
 
     .localizacao-conteudo picture {
         grid-row: 6;
+        max-width: 100%;
+        margin-top: 4rem;
     }
 }

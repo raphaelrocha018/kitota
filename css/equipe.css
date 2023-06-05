@@ -104,7 +104,8 @@
     }
 
     .equipe-conteudo p {
-        max-width: 19rem;
+        max-width: 100%;
+        font-size: 0.875rem;
     }
 }
 
@@ -113,9 +114,13 @@
         grid-template-columns: 1fr;
     }
 
+    .equipe-conteudo h2 {
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+    }
+
     .equipe-conteudo p {
-        font-size: 0.875rem;
-        max-width: 100%;
+        max-width: 36ch;
     }
 
     .equipe-conteudo .foto {

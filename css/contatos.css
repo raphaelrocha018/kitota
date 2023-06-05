@@ -279,8 +279,25 @@
         grid-template-columns: 1fr;
     }
 
+    .contatos-conteudo > p {
+        grid-column: 1;
+        font-size: 0.875rem;
+        max-width: 100%;
+    }
+
+    .contatos-conteudo address {
+        grid-row: 4;
+        grid-column: 1;
+    }
+
+    .contatos-conteudo > div {
+        grid-row: 5;
+        grid-column: 1;
+    }
+
     .contatos-conteudo form {
         grid-column: 1;
+        grid-row: 3;
     }
 
     .formulario {

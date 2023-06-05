@@ -12,7 +12,7 @@
 
 .inicio-conteudo {
     padding-top: 45vh;
-    max-width: 51rem;
+    max-width: 57rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,13 +20,14 @@
 }
 
 .inicio-conteudo picture {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .inicio-conteudo p {
     font-family: var(--font-2);
-    font-size: 0.875rem;
-    line-height: 1.3;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
     color: var(--p2);
     text-align: center;
 }
@@ -39,7 +40,8 @@
 
 @media (max-width: 1440px) {
     .inicio-conteudo {
-        max-width: 40rem;
+        padding-top: 40vh;
+        max-width: 45rem;
         gap: 1.25rem;
     }
 
@@ -48,25 +50,18 @@
     }
 
     .inicio-conteudo p {
-        font-size: 0.75rem;
-        font-weight: 500;
-        line-height: 1.4;
+        font-size: 0.875rem;
     }
 }
 
 @media (max-width: 1080px) {
     .inicio-conteudo {
-        padding-top: 36vh;
+        padding-top: 32vh;
         max-width: 36rem;
-    }
-
-    .inicio-conteudo p {
-        font-size: 0.875rem;
-        line-height: 1.5;
     }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 720px) {
     .inicio-conteudo {
         padding-top: 25vh;
         max-width: 100%;

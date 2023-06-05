@@ -132,6 +132,7 @@ html {
 .header menu li {
     font-family: var(--font-2);
     font-size: 0.75rem;
+    font-weight: 500;
     color: var(--p1);
 }
 
@@ -143,6 +144,7 @@ html {
 .btn1 {
     font-family: var(--font-2);
     font-size: 0.75rem;
+    font-weight: 500;
 
     color: var(--p2);
     background-color: var(--p6);
@@ -174,18 +176,16 @@ html {
 }
 
 @media (max-width: 1080px) {
+    .header-conteudo picture {
+        display: none;
+    }
+
     .header menu {
         display: none;
     }
 
     .btn1 {
         padding: 1rem 2rem;
-    }
-}
-
-@media (max-width: 720px) {
-    .header-conteudo picture {
-        display: none;
     }
 }
 

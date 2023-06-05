@@ -102,6 +102,7 @@
 
     .sobre-conteudo .documentos {
         grid-column: 2;
+        margin-top: 3rem;
     }
 
     .sobre-conteudo .foto {
@@ -124,10 +125,6 @@
     .documentos h3 {
         font-size: 0.875rem;
     }
-
-    .botoes > button {
-        padding: 0.5rem 0.5rem;
-    }
 }
 
 @media (max-width: 1080px) {
@@ -146,30 +143,36 @@
     .sobre-conteudo .grafico {
         grid-column: 1/-1;
         grid-row: 5;
-        max-width: 80%;
+        max-width: 75%;
         margin-top: 3rem;
         justify-self: center;
     }
 
     .sobre-conteudo .documentos {
         margin-top: 3rem;
-        grid-column: 1;
+        grid-column: 1/-1;
         text-align: start;
-    }
-
-    .sobre-conteudo p {
-        max-width: 19rem;
-    }
-}
-
-@media (max-width: 1080px) {
-    .sobre-conteudo {
-        grid-template-columns: 1fr;
+        justify-self: start;
     }
 
     .sobre-conteudo p {
         font-size: 0.875rem;
         max-width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .sobre-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-conteudo h2 {
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+    }
+
+    .sobre-conteudo p {
+        max-width: 39ch;
     }
 
     .sobre-conteudo .foto {

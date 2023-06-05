@@ -190,7 +190,7 @@
 
     .noticias-conteudo > p {
         font-size: 0.875rem;
-        max-width: 100%;
+        max-width: 36ch;
     }
 
     .card-group {
