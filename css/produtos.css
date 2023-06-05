@@ -145,7 +145,6 @@
 
     .produtos-conteudo h2 {
         font-size: 1.125rem;
-        margin-bottom: 2rem;
     }
 
     .produtos-conteudo > div {
@@ -168,9 +167,5 @@
     .produtos-conteudo p {
         max-width: 100%;
         font-size: 0.875rem;
-    }
-
-    .produtos picture {
-        padding-top: 0rem;
     }
 }

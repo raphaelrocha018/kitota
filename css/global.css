@@ -230,6 +230,17 @@ html {
     }
 }
 
+@media (max-width: 720px) {
+    .footer {
+        height: 15rem;
+    }
+
+    .footer-conteudo {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
 /* BARRA DE ROLAGEM NOTÍCIAS */
 
 ::-webkit-scrollbar {
