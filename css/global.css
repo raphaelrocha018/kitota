@@ -237,7 +237,7 @@ html {
 
     .footer-conteudo {
         flex-direction: column;
-        gap: 3rem;
+        gap: 4rem;
     }
 }
 
