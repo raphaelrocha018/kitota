@@ -68,7 +68,7 @@
     gap: 0.5rem;
 }
 
-.botoes > button {
+.botoes > a {
     background-color: var(--p5);
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
@@ -80,7 +80,7 @@
     cursor: pointer;
 }
 
-.botoes > button:hover {
+.botoes > a:hover {
     background-color: var(--p4);
     color: var(--c00);
     transition: ease 0.3s;
