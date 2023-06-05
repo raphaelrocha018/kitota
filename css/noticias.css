@@ -170,6 +170,11 @@
 }
 
 @media (max-width: 1080px) {
+    .noticias-conteudo > p {
+        font-size: 0.875rem;
+        max-width: 36ch;
+    }
+
     .card-group {
         gap: 1.25rem;
         padding-bottom: 1.25rem;
@@ -188,9 +193,9 @@
         grid-template-columns: 1fr;
     }
 
-    .noticias-conteudo > p {
-        font-size: 0.875rem;
-        max-width: 36ch;
+    .noticias-conteudo h2 {
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
     }
 
     .card-group {
