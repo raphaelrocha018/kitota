@@ -7,7 +7,7 @@ export default function initMenuMobile() {
     function openMenu(event) {
         menuList.classList.toggle("active");
         menuButton.classList.toggle("active");
-        outsideClick(this, ["click", "touchstart"], () => {
+        outsideClick(menuList, ["click"], () => {
             menuList.classList.remove("active");
             menuButton.classList.remove("active");
         });

@@ -73,7 +73,9 @@
     }
 
     .produtos-conteudo > div > img {
-        left: 128px;
+        max-width: 30%;
+        top: -36px;
+        left: 144px;
     }
 
     .produtos-conteudo h2 {
@@ -153,9 +155,9 @@
     }
 
     .produtos-conteudo > div > img {
-        max-width: 30%;
-        top: -24px;
-        left: 160px;
+        max-width: 8rem;
+        top: -32px;
+        left: 45%;
     }
 
     .produtos-conteudo h3 {
