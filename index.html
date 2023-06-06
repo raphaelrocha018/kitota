@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#eff6fd">
+
     <title>Mn Kitota - Mina de Manganês e Ferro</title>
     <link rel="shortcut icon" href="./css/img/kitota-favicon.ico" type="image/x-icon">
+    <script>document.documentElement.className += ' js';</script>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -17,7 +21,10 @@
                 <img src="./css/img/logo/logo40.png" alt="Logotipo Mn Kitota">
             </picture>
             <nav>
-                <menu class="menu-sessoes">
+                <button class="menu-mobile" data-menu="button" aria-expanded="false" aria-controls="menu">
+                    <img src="./css/img/icons/menu-burger.svg" alt="Ícone de menu">
+                </button>
+                <menu class="menu-lista" data-menu="list" id="menu">
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#produtos">Produtos</a></li>
                     <li><a href="#sobre">Quem somos</a></li>
@@ -43,7 +50,7 @@
             </div>
         </section>
 
-        <section class="produtos" id="produtos">
+        <section class="produtos" id="produtos" data-anime="scroll">
             <div class="produtos-conteudo container">
                 <a href="#inicio" class="voltar claro">
                     <span>voltar</span>
@@ -73,7 +80,7 @@
             </div>
         </section>
 
-        <section class="sobre" id="sobre">
+        <section class="sobre" id="sobre" data-anime="scroll">
             <div class="sobre-conteudo container">
                 <h2>Quem somos</h2>
                 <a href="#inicio" class="voltar escuro">
@@ -97,7 +104,7 @@
             </div>
         </section>
 
-        <section class="equipe" id="equipe">
+        <section class="equipe" id="equipe" data-anime="scroll">
             <div class="equipe-conteudo container">
                 <a href="#inicio" class="voltar claro">
                     <span>voltar</span>
@@ -112,7 +119,7 @@
             </div>
         </section>
 
-        <section class="localizacao" id="localizacao">
+        <section class="localizacao" id="localizacao" data-anime="scroll">
             <div class="localizacao-conteudo container">
                 <a href="#inicio" class="voltar claro">
                     <span>voltar</span>
@@ -139,7 +146,7 @@
             </div>
         </section>
 
-        <section class="noticias" id="noticias">
+        <section class="noticias" id="noticias" data-anime="scroll">
             <div class="noticias-conteudo container">
                 <a href="#inicio" class="voltar escuro">
                     <span>voltar</span>
@@ -198,7 +205,7 @@
             </div>
         </section>
 
-        <section class="contatos" id="contatos">
+        <section class="contatos" id="contatos" data-anime="scroll">
             <div class="contatos-conteudo container">
                 <a href="#inicio" class="voltar claro">
                     <span>voltar</span>
@@ -262,6 +269,8 @@
             <p>Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

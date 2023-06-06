@@ -24,6 +24,10 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+body {
+    background-color: var(--p1);
+}
+
 /* CONTAINER */
 
 .container {
@@ -113,6 +117,7 @@ html {
 .header {
     position: absolute;
     width: 100%;
+    z-index: 500;
 }
 
 .header div {
@@ -123,20 +128,20 @@ html {
     align-items: center;
 }
 
-.header menu {
+.menu-lista {
     display: flex;
     flex-direction: row;
     gap: 3rem;
 }
 
-.header menu li {
+.menu-lista li a {
     font-family: var(--font-2);
     font-size: 0.75rem;
     font-weight: 500;
     color: var(--p1);
 }
 
-.header menu li:hover {
+.menu-lista li a:hover {
     color: var(--p5);
     transition: ease 0.2s;
 }
@@ -166,7 +171,7 @@ html {
         padding-top: 3em;
     }
 
-    .header menu {
+    .menu-lista {
         gap: 2.5rem;
     }
 
@@ -177,10 +182,6 @@ html {
 
 @media (max-width: 1080px) {
     .header-conteudo picture {
-        display: none;
-    }
-
-    .header menu {
         display: none;
     }
 

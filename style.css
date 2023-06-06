@@ -14,3 +14,8 @@
 @import url("./css/localizacao.css");
 @import url("./css/noticias.css");
 @import url("./css/contatos.css");
+
+/* JAVASCRIPT */
+
+@import url("./css/js-style/menu-mobile.css");
+@import url("./css/js-style/anima-scroll.css");
