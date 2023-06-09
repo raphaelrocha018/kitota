@@ -10,7 +10,7 @@
     padding-bottom: 4rem;
     position: relative;
     z-index: -2;
-    animation: bg-slide 30s ease infinite;
+    animation: bg-slide 20s ease-in-out infinite;
     animation-delay: 15000ms;
 }
 
