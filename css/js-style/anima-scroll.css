@@ -2,11 +2,11 @@
 
 .js [data-anime="scroll"] {
     opacity: 0;
-    transform: translate3d(-30px, 0, 0);
+    transition: ease-in 0.5s;
+    transform: translateX(-30px);
 }
 
 .js [data-anime="scroll"].ativo {
     opacity: 1;
-    transition: ease 0.5s;
-    transform: translate3d(0, 0, 0);
+    transform: translateX(0px);
 }

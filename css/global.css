@@ -173,9 +173,11 @@ body {
 
     .menu-lista {
         gap: 2.5rem;
+        font-weight: 500;
     }
 
     .btn1 {
+        font-weight: 500;
         padding: 0.625rem 1.5rem;
     }
 }
@@ -185,11 +187,8 @@ body {
         display: none;
     }
 
-    .menu-lista li:first-child {
-        display: none;
-    }
-
     .btn1 {
+        font-size: 0.875rem;
         padding: 1rem 2rem;
     }
 }

@@ -1,30 +1,30 @@
 [data-inicio="a"] {
     opacity: 0;
-    animation: animaInicio 2s forwards;
+    animation: animaInicio 1500ms forwards;
     animation-delay: 500ms;
 }
 
 [data-inicio="b"] {
     opacity: 0;
-    animation: animaInicio 2s forwards;
+    animation: animaInicio 1500ms forwards;
     animation-delay: 2500ms;
 }
 
 [data-inicio="c"] {
     opacity: 0;
-    animation: animaInicio 2s forwards;
+    animation: animaInicio 1500ms forwards;
     animation-delay: 6500ms;
 }
 
 [data-inicio="d"] {
     opacity: 0;
-    animation: animaInicio 2s forwards;
+    animation: animaInicio 1500ms forwards;
     animation-delay: 13000ms;
 }
 
 [data-inicio="e"] {
     opacity: 0;
-    animation: animaInicio 2s forwards;
+    animation: animaInicio 1500ms forwards;
     animation-delay: 1000ms;
 }
 
