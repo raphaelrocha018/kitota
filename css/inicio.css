@@ -8,6 +8,8 @@
     background-position: center;
     min-height: 100vh;
     padding-bottom: 4rem;
+    position: relative;
+    z-index: -10;
 }
 
 .inicio-conteudo {
@@ -17,6 +19,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    z-index: 1;
 }
 
 .inicio-conteudo picture {
