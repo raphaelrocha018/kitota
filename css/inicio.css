@@ -2,13 +2,38 @@
 
 .inicio {
     background-color: var(--p7);
-    background-image: url(../css/img/imagem-1.jpg);
+    background-image: url(../css/img/slide-inicio/imagem-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
     padding-bottom: 4rem;
     position: relative;
+    z-index: -2;
+    animation: bg-slide 30s ease infinite;
+    animation-delay: 15000ms;
+}
+
+@keyframes bg-slide {
+    0%,
+    100% {
+        background-image: url(../css/img/slide-inicio/imagem-1.jpg);
+    }
+    25% {
+        background-image: url(../css/img/slide-inicio/imagem-1.jpg);
+    }
+    35% {
+        background-image: url(../css/img/slide-inicio/imagem-2.jpg);
+    }
+    55% {
+        background-image: url(../css/img/slide-inicio/imagem-2.jpg);
+    }
+    65% {
+        background-image: url(../css/img/slide-inicio/imagem-3.jpg);
+    }
+    90% {
+        background-image: url(../css/img/slide-inicio/imagem-3.jpg);
+    }
 }
 
 .inicio-conteudo {
