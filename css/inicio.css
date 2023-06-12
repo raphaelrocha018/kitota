@@ -10,29 +10,29 @@
     padding-bottom: 4rem;
     position: relative;
     z-index: -2;
-    animation: bg-slide 20s ease-in-out infinite;
-    animation-delay: 15000ms;
+    animation: bg-slide ease infinite;
+    /* animation-delay: 15s; */
 }
 
 @keyframes bg-slide {
     0%,
     100% {
-        background-image: url(../css/img/slide-inicio/imagem-1.jpg);
+        background-image: url(../css/img/slide-inicio/imagem-2.jpg);
     }
     25% {
-        background-image: url(../css/img/slide-inicio/imagem-1.jpg);
+        background-image: url(../css/img/slide-inicio/imagem-2.jpg);
     }
     35% {
-        background-image: url(../css/img/slide-inicio/imagem-2.jpg);
+        background-image: url(../css/img/slide-inicio/imagem-3.jpg);
     }
     55% {
-        background-image: url(../css/img/slide-inicio/imagem-2.jpg);
+        background-image: url(../css/img/slide-inicio/imagem-3.jpg);
     }
     65% {
-        background-image: url(../css/img/slide-inicio/imagem-3.jpg);
+        background-image: url(../css/img/slide-inicio/imagem-1.jpg);
     }
     90% {
-        background-image: url(../css/img/slide-inicio/imagem-3.jpg);
+        background-image: url(../css/img/slide-inicio/imagem-1.jpg);
     }
 }
 
