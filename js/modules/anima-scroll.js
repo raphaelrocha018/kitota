@@ -7,7 +7,6 @@ export default function initAnimaScroll() {
             sections.forEach((section) => {
                 const sectionTop =
                     section.getBoundingClientRect().top - windowMetade;
-                console.log(sectionTop);
                 if (sectionTop < 0) {
                     section.classList.add("ativo");
                 }

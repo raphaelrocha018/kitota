@@ -4,6 +4,8 @@
 
 /* GLOBAL */
 @import url("./css/global.css");
+@import url("./css/header.css");
+@import url("./css/footer.css");
 
 /* SESSÕES */
 
@@ -18,5 +20,6 @@
 /* JAVASCRIPT */
 
 @import url("./css/js-style/menu-mobile.css");
+@import url("./css/js-style/menu-lang.css");
 @import url("./css/js-style/anima-scroll.css");
 @import url("./css/js-style/anima-inicio.css");

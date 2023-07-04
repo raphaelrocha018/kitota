@@ -85,9 +85,12 @@
     gap: 0.875rem;
 }
 
+.redes-sociais ul li {
+    transition: 0.3s ease;
+}
+
 .redes-sociais ul li:hover {
     transform: scale(1.2);
-    transition: ease-in-out 0.3s;
 }
 
 /* RESPONSIVO CONTATOS */
@@ -228,6 +231,8 @@
 
 .formulario textarea {
     resize: vertical;
+    min-height: 8.75rem;
+    max-height: 30rem;
 }
 
 ::placeholder {
@@ -274,12 +279,12 @@
     border-radius: 0.5rem;
     margin-top: 0.75rem;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .formulario button:hover {
     background-color: var(--p5);
     color: var(--c00);
-    transition: ease 0.3s;
 }
 
 /* RESPONSIVO FORMULÁRIO */

@@ -1,0 +1,51 @@
+/* FOOTER */
+
+.footer {
+    height: 15rem;
+    background-color: var(--p7);
+}
+
+.footer-conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.footer-conteudo p {
+    font-family: var(--font-2);
+    font-size: 0.875rem;
+
+    color: var(--p2);
+}
+
+/* RESPONSIVO FOOTER */
+
+@media (max-width: 1440px) {
+    .footer {
+        height: 10rem;
+    }
+
+    .footer-conteudo {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    .footer-conteudo p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .footer {
+        height: 15rem;
+    }
+
+    .footer-conteudo {
+        flex-direction: column;
+        gap: 4rem;
+    }
+}

@@ -10,31 +10,27 @@
     padding-bottom: 4rem;
     position: relative;
     z-index: -2;
-    animation-name: bg-slide;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-delay: 13s;
+    animation: bg-slide 30s 13s forwards infinite;
 }
 
 @keyframes bg-slide {
-    0%,
-    100% {
+    22% {
         background-image: url(../css/img/slide-inicio/imagem-1.jpg);
     }
-    25% {
-        background-image: url(../css/img/slide-inicio/imagem-1.jpg);
-    }
-    35% {
+    33% {
         background-image: url(../css/img/slide-inicio/imagem-2.jpg);
     }
     55% {
         background-image: url(../css/img/slide-inicio/imagem-2.jpg);
     }
-    65% {
+    66% {
         background-image: url(../css/img/slide-inicio/imagem-3.jpg);
     }
-    90% {
+    88% {
         background-image: url(../css/img/slide-inicio/imagem-3.jpg);
+    }
+    99% {
+        background-image: url(../css/img/slide-inicio/imagem-1.jpg);
     }
 }
 
@@ -51,7 +47,7 @@
     margin-bottom: 2rem;
 }
 
-.inicio-conteudo p {
+.inicio-conteudo > p {
     font-family: var(--font-2);
     font-size: 1rem;
     font-weight: 500;
@@ -65,6 +61,8 @@
     font-style: normal;
     font-weight: 600;
 }
+
+/* RESPONSIVO INICIO */
 
 @media (max-width: 1440px) {
     .inicio-conteudo {
@@ -85,7 +83,7 @@
 
 @media (max-width: 1080px) {
     .inicio-conteudo {
-        padding-top: 32vh;
+        padding-top: 30vh;
         max-width: 36rem;
     }
 
@@ -96,7 +94,6 @@
 
 @media (max-width: 720px) {
     .inicio-conteudo {
-        padding-top: 30vh;
-        max-width: 100%;
+        width: 100%;
     }
 }

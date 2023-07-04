@@ -1,0 +1,93 @@
+/* HEADER */
+
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 500;
+}
+
+.header > div {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-lista {
+    display: flex;
+    gap: 3rem;
+}
+
+.menu-lista li a {
+    font-family: var(--font-2);
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--p1);
+    transition: ease 0.2s;
+}
+
+.menu-lista li a:hover {
+    color: var(--p5);
+}
+
+.nav2 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.btn1 {
+    font-family: var(--font-2);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+
+    color: var(--p1);
+    background-color: var(--p6);
+
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+    width: 11rem;
+}
+
+.btn1:hover {
+    background-color: var(--p5);
+    color: var(--p1);
+    transition: 0.2s;
+}
+
+/* RESPONSIVO HEADER */
+
+@media (max-width: 1440px) {
+    .header > div {
+        padding-top: 3em;
+    }
+
+    .menu-lista {
+        gap: 2.5rem;
+        font-weight: 500;
+    }
+
+    .nav2 {
+        gap: 0.75rem;
+    }
+
+    .btn1 {
+        font-weight: 500;
+        padding: 0.875rem 1.5rem;
+        width: 10rem;
+    }
+}
+
+@media (max-width: 1080px) {
+    .header-conteudo picture {
+        display: none;
+    }
+
+    .btn1 {
+        font-size: 0.875rem;
+        padding: 0.875rem 2rem;
+        width: 12rem;
+    }
+}
