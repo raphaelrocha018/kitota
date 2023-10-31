@@ -322,6 +322,10 @@
 }
 
 @media (max-width: 1080px) {
+    .contatos > img {
+        display: none;
+    }
+
     .formulario {
         margin-top: 3rem;
         margin-bottom: 2rem;

@@ -67,6 +67,16 @@
     }
 }
 
-@media (max-width: 1080px) {}
+@media (max-width: 1080px) {
+    .clientes > img {
+        max-width: 75%;
+        top: 50%;
+    }
+}
 
-@media (max-width: 720px) {}
+@media (max-width: 720px) {
+    .clientes > img {
+        max-width: 100%;
+        top: 50%;
+    }
+}

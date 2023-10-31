@@ -197,6 +197,10 @@
     .card-group:last-child {
         padding-right: 2rem;
     }
+
+    .noticias > img {
+        display: none;
+    }
 }
 
 @media (max-width: 720px) {

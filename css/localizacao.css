@@ -125,25 +125,18 @@
     }
 
     .localizacao .foto {
-        position: absolute;
-        top: 8rem;
-        right: 0;
-        left: initial;
-        max-width: 45%;
+        display: none;
     }
 
-    .localizacao-conteudo .mapa {
-        grid-column: 1/-1;
-        grid-row: 4;
-        max-width: 85%;
-        padding-left: 8rem;
-        padding-top: 6rem;
+    .mapa {
+        transform: initial;
+        top: auto;
+        bottom: 0;
+        max-width: 100%;
     }
 
     .mapa figcaption {
-        padding-top: 16rem;
-        padding-left: 8.5rem;
-        font-size: 0.875rem;
+        padding-top: 14rem;
     }
 
     .localizacao-conteudo p {
@@ -160,9 +153,10 @@
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 810px) {
     .localizacao-conteudo {
         grid-template-columns: 1fr;
+        padding-bottom: 8rem;
     }
 
     .equipe-conteudo h2 {
@@ -192,9 +186,8 @@
     }
 
     .mapa figcaption {
-        padding-left: 4%;
-        padding-top: 53%;
-        font-size: 0.75rem;
+        padding-top: 21rem;
+        left: 6rem;
     }
 
     .localizacao-conteudo picture {

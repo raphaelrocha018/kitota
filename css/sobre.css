@@ -130,48 +130,57 @@
     .sobre-conteudo p {
         font-size: 0.875rem;
         margin-bottom: 0.5rem;
-        max-width: 27rem;
+        max-width: 40rem;
         line-height: 1.3;
     }
 }
 
 @media (max-width: 1080px) {
     .sobre-conteudo {
-        gap: 0 1rem;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
     }
 
-    .sobre-conteudo .foto {
-        grid-column: 2;
-        grid-row: 1/5;
-        margin-top: 0;
-        max-width: 100%;
-        align-self: flex-start;
+    .sobre-conteudo .imagens {
+        transform: scale(100%);
+        max-width: 32%;
+        margin-bottom: 4rem;
     }
 
-    .sobre-conteudo .grafico {
-        grid-column: 1/-1;
-        grid-row: 5;
-        max-width: 75%;
-        margin-top: 3rem;
-        justify-self: center;
-    }
-
-    .sobre-conteudo .documentos {
-        margin-top: 3rem;
-        grid-column: 1/-1;
-        text-align: start;
-        justify-self: start;
+    .sobre-conteudo > h2,
+    .sobre-conteudo > p {
+        grid-column: 1;
+        margin-left: 0;
     }
 
     .sobre-conteudo p {
         font-size: 0.875rem;
         max-width: 100%;
     }
+
+    .sociedade {
+        grid-column: 2;
+        grid-row: 4 / 5;
+        margin-top: 0;
+        margin-left: 4rem;
+    }
 }
 
 @media (max-width: 720px) {
     .sobre-conteudo {
         grid-template-columns: 1fr;
+    }
+
+    .sobre-conteudo .imagens {
+        transform: scale(100%);
+        max-width: 48%;
+        margin-bottom: 4rem;
+        gap: .5rem;
+    }
+
+    .sobre-conteudo .imagens img:last-child {
+        display: none;
     }
 
     .sobre-conteudo h2 {
@@ -183,20 +192,10 @@
         max-width: 39ch;
     }
 
-    .sobre-conteudo .foto {
-        grid-column: 1;
-        grid-row: 5;
-        margin-top: 2rem;
-    }
-
-    .sobre-conteudo .grafico {
+    .sociedade {
         grid-column: 1;
         grid-row: 6;
-        max-width: 100%;
-    }
-
-    .sobre-conteudo .documentos {
-        grid-row: 7;
-        justify-self: start;
+        margin-top: 0;
+        margin-left: 0;
     }
 }
