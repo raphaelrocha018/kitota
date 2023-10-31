@@ -9,7 +9,8 @@
 .localizacao-conteudo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 12rem;
+    grid-template-rows: auto auto 1fr auto;
+    padding-top: 10rem;
     padding-bottom: 4rem;
 }
 
@@ -19,20 +20,31 @@
 }
 
 .localizacao .foto {
-    position: absolute;
-    bottom: 7rem;
-    left: 0;
-    max-width: 40%;
+    grid-column: 1;
+    grid-row: 5;
+    margin-top: 6rem;
+    border-radius: .75rem;
 }
 
-.localizacao-conteudo .mapa {
+.coordenadas {
     grid-column: 2;
-    grid-row: 2/5;
-    position: relative;
+    grid-row: 5;
+    place-self: end;
+}
+
+.mapa {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    z-index: -1;
 }
 
 .mapa > a {
-    cursor: default;
+    cursor: pointer;
+}
+
+.mapa > a:hover > figcaption {
+    color: var(--p5);
 }
 
 .mapa figcaption {
@@ -40,17 +52,13 @@
     padding-top: 14.5rem;
     padding-inline: 2rem;
     top: 0rem;
-    left: 0rem;
+    left: 12rem;
 
     font-family: var(--font-2);
     font-weight: 500;
     font-size: 1rem;
     color: var(--p6);
     cursor: pointer;
-}
-
-.mapa figcaption:hover {
-    color: var(--p5);
 }
 
 .localizacao-conteudo h2 {
@@ -69,13 +77,6 @@
     max-width: 26rem;
 }
 
-.localizacao-conteudo picture {
-    grid-row: 5;
-    grid-column: 2;
-    margin-top: 2rem;
-    justify-self: right;
-}
-
 /* RESPONSIVO LOCALIZAÇÃO */
 
 @media (max-width: 1440px) {
@@ -85,18 +86,19 @@
     }
 
     .localizacao .foto {
-        bottom: 4rem;
+        margin-top: 2rem;
+        max-width: 70%;
     }
 
-    .localizacao-conteudo .mapa {
-        max-width: 85%;
-        padding-left: 1rem;
+    .mapa {
+        transform: scale(80%) translateX(5.5rem);
+        top: -1rem;
     }
 
     .mapa figcaption {
-        padding-top: 10rem;
-        padding-inline: 1.5rem;
-        font-size: 0.875rem;
+        padding-top: 15rem;
+        padding-inline: 2rem;
+        font-size: 1rem;
     }
 
     .localizacao-conteudo h2 {

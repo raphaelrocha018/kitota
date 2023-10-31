@@ -13,6 +13,13 @@
     padding-bottom: 4rem;
 }
 
+.contatos > img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
 .contatos-conteudo h2,
 .contatos-conteudo > p,
 .contatos-conteudo address,
@@ -98,6 +105,10 @@
 @media (max-width: 1440px) {
     .contatos-conteudo {
         padding-top: 8rem;
+    }
+
+    .contatos > img {
+        max-width: 50%;
     }
 
     .contatos-conteudo h2 {

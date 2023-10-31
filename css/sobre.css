@@ -1,37 +1,38 @@
 /* SOBRE */
 
 .sobre {
-    background-color: var(--p7);
+    background: url('/css/img/sobre-bg.png') no-repeat;
     min-height: 100vh;
     position: relative;
 }
 
 .sobre-conteudo {
     display: grid;
-    grid-template-columns: 5fr 2fr 5fr;
-    padding-top: 12rem;
-    padding-bottom: 4rem;
+    grid-template-columns: 1fr 332px 1fr;
+    gap: .75rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
 }
 
-.sobre-conteudo h2,
-.sobre-conteudo p {
+.sobre-conteudo .imagens {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 1rem;
+    transform: scale(80%)
+}
+
+.imagens img {
+    border-radius: .75rem;
+}
+
+.imagens img:nth-child(2) {
+    transform: translateY(4rem);
+}
+
+.sobre-conteudo > h2,
+.sobre-conteudo > p {
     grid-column: 1;
-}
-
-.sobre-conteudo .foto {
-    grid-column: 1;
-    grid-row: 5/7;
-    align-self: end;
-    margin-top: 4rem;
-}
-
-.sobre-conteudo .grafico {
-    grid-column: 3;
-    grid-row: 4/6;
-}
-
-.sobre-conteudo .documentos {
-    grid-column: 3;
+    margin-left: 8rem;
 }
 
 .sobre-conteudo h2 {
@@ -50,64 +51,74 @@
     max-width: 30rem;
 }
 
-.documentos h3 {
-    font-family: var(--font-2);
-    font-size: 1rem;
-    color: var(--p2);
-    margin-bottom: 0.75rem;
+.sociedade {
+    grid-column: 3;
+    grid-row: 2 / 5;
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
 
-.documentos {
-    justify-self: end;
-    text-align: end;
-}
-
-.botoes {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-}
-
-.botoes > a {
-    background-color: var(--p5);
-    padding: 0.75rem 1rem;
-    border-radius: 0.5rem;
-
-    font-family: var(--font-2);
+.sociedade h3 {
+    font-family: var(--font-1);
     font-weight: 500;
-    font-size: 0.625rem;
-    color: var(--p1);
-    cursor: pointer;
+    font-style: italic;
+    font-size: .875rem;
+    color: #A6DFFF;
+    margin-bottom: 0.75rem;
+    position: relative;
 }
 
-.botoes > a:hover {
-    background-color: var(--p4);
+.sociedade h3::before {
+    content: '';
+    display: inline-block;
+    background-color: #A6DFFF;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -12px;
+    border-radius: 4px;
+    opacity: 50%;
+}
+
+.sociedade ul li {
+    position: relative;
+    padding-left: 1rem;
+    font-family: var(--font-1);
+    font-size: 0.875rem;
     color: var(--c00);
-    transition: ease 0.3s;
+}
+
+.sociedade ul li::before {
+    content: '';
+    display: inline-block;
+    background: url('/css/img/setinha.svg');
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.sobre em {
+    color: #A6DFFF;
+}
+
+.sobre i {
+    color: #A6A6A6;
+    font-size: .75rem;
 }
 
 /* RESPONSIVO SOBRE */
 
 @media (max-width: 1440px) {
     .sobre-conteudo {
-        grid-template-columns: 1fr 1fr;
-        gap: 0 4rem;
-        padding-top: 8rem;
-        padding-bottom: 4rem;
+        grid-template-columns: 1fr 249px 1fr;
+        padding-top: 0;
     }
 
-    .sobre-conteudo .grafico {
-        grid-column: 2;
-    }
-
-    .sobre-conteudo .documentos {
-        grid-column: 2;
-        margin-top: 3rem;
-    }
-
-    .sobre-conteudo .foto {
-        margin-top: 2rem;
-        max-width: 80%;
+    .sobre-conteudo .imagens {
+        transform: scale(60%) translateX(-8rem);
     }
 
     .sobre-conteudo h2 {
@@ -116,14 +127,10 @@
     }
 
     .sobre-conteudo p {
-        font-size: 0.75rem;
+        font-size: 0.875rem;
         margin-bottom: 0.5rem;
         max-width: 27rem;
         line-height: 1.3;
-    }
-
-    .documentos h3 {
-        font-size: 0.875rem;
     }
 }
 

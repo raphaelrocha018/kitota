@@ -49,12 +49,12 @@
     padding: 1.125rem 2rem;
     border-radius: 0.5rem;
     width: 11rem;
+    transition: 0.2s ease;
 }
 
 .btn1:hover {
     background-color: var(--p5);
     color: var(--p1);
-    transition: 0.2s;
 }
 
 /* RESPONSIVO HEADER */
@@ -65,7 +65,7 @@
     }
 
     .menu-lista {
-        gap: 2.5rem;
+        gap: 1.75rem;
         font-weight: 500;
     }
 
