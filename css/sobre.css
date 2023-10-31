@@ -1,7 +1,8 @@
 /* SOBRE */
 
 .sobre {
-    background: url('/css/img/sobre-bg.jpg') no-repeat;
+    /* background: url('/css/img/sobre-bg.jpg') no-repeat; */
+    background-color: var(--p7);
     min-height: 100vh;
     position: relative;
 }
