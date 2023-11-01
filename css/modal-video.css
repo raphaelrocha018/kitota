@@ -1,0 +1,53 @@
+.modal-video {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 49, 83, .7);
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.modal-video div {
+    place-self: center;
+    width: 80%;
+    height: auto;
+
+    aspect-ratio: 16/9;
+    position: relative;
+}
+
+.modal-video div iframe {
+    border-radius: .75rem;
+}
+
+.btn-close {
+    position: absolute;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.btn-close > svg > circle,
+.btn-close > svg > path {
+    transition: .3s ease;
+}
+
+.btn-close:hover > svg > circle {
+    fill: var(--p7)
+}
+
+.btn-close:hover > svg > path {
+    fill: var(--c00)
+}
+
+.off {
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .modal-video div {
+        width: 100%;
+    }
+}

@@ -13,13 +13,13 @@
 [data-inicio="c"] {
     opacity: 0;
     animation: animaInicio 1500ms forwards;
-    animation-delay: 5000ms;
+    animation-delay: 4500ms;
 }
 
 [data-inicio="d"] {
     opacity: 0;
     animation: animaInicio 1500ms forwards;
-    animation-delay: 7500ms;
+    animation-delay: 6000ms;
 }
 
 [data-inicio="e"] {
@@ -27,6 +27,12 @@
     animation: animaInicio 1500ms forwards;
     animation-delay: 1000ms;
 }
+
+/* [data-inicio="f"] {
+    opacity: 0;
+    animation: animaInicio 1500ms forwards;
+    animation-delay: 7500ms;
+} */
 
 @keyframes animaInicio {
     from {
