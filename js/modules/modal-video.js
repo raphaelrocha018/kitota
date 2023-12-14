@@ -4,6 +4,9 @@ export default function initModalVideo() {
     const inicio = document.querySelector('.inicio')
     const video = document.querySelector('.modal-video iframe')
     // const btnVideo = document.querySelector('.video-btn')
+    const html = document.documentElement
+    const body = document.querySelector('body')
+    // const mobile = window.matchMedia("(max-width: 720px)").matches
 
     // function openVideo() {
     //     modalVideo.classList.remove('off')
@@ -11,6 +14,10 @@ export default function initModalVideo() {
     // }
 
     function closeVideo() {
+        html.classList.remove('stop-scrolling-html')
+        body.classList.remove('stop-scrolling-body')
+        body.classList.remove('compensate-scrollbar')
+
         modalVideo.classList.add('off')
         video.classList.add('off')
         inicio.classList.add('play')

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="stop-scrolling-html">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,7 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 
-	<body>
+	<body class="stop-scrolling-body">
 		<header class="header" data-inicio="e">
 			<div class="header-conteudo container">
 				<picture>
@@ -106,34 +106,35 @@
 								transform="translate(0 6) rotate(-90)" />
 						</svg>
 					</a>
-					<div class="imagens">
+					<div class="sobre-imagens">
 						<img src="./css/img/sobre1.png" alt="" />
 						<img src="./css/img/sobre2.png" alt="" />
-						<img src="./css/img/sobre3.png" alt="" />
 					</div>
-					<h2 class="portugues">Quem somos</h2>
-					<h2 class="ingles">About us</h2>
+					<div class="sobre-texto">
+						<h2 class="portugues">Quem somos</h2>
+						<h2 class="ingles">About us</h2>
 
-					<p class="portugues">
-						Somos uma empresa mineira de reconhecimento, prospecção e <em>exploração de recursos mineiros</em> ferrosos
-						e não ferrosos fundada em Angola no ano de 2019.
-					</p>
-					<p class="ingles">
-						We are a mining company founded in Angola in 2019, focused on recognition, prospecting and exploration of
-						ferrous and non-ferrous mining resources
-					</p>
-					<p class="portugues">
-						No ano de 2019 tiveram inicio os trabalhos de <em>reavaliação das reservas</em> e após a conclusão do
-						cálculo e dos estudos de impacte ambiental e de viabilidade técnica, económica e financeira, à empresa foi
-						atribuída pela autoridade competente o <em>título de exploração de manganês</em> nº 350/07/01/T.E/ANG –
-						MIREMPET/2020, que é válida até ao ano de 2030.
-					</p>
-					<p class="ingles">
-						In 2019, work began on <em>reassessing the reserves</em> and after completing the calculation and
-						environmental impact studies and technical, economic and financial feasibility, our company was awarded by
-						the competent authority, the <em>manganese exploration title</em> nº 350/07/01/T.E/ANG – MIREMPET/2020,
-						which is valid until the year 2030.
-					</p>
+						<p class="portugues">
+							Somos uma empresa mineira de reconhecimento, prospecção e
+							<em>exploração de recursos mineiros</em> ferrosos e não ferrosos fundada em Angola no ano de 2019.
+						</p>
+						<p class="ingles">
+							We are a mining company founded in Angola in 2019, focused on recognition, prospecting and exploration of
+							ferrous and non-ferrous mining resources
+						</p>
+						<p class="portugues">
+							No ano de 2019 tiveram inicio os trabalhos de <em>reavaliação das reservas</em> e após a conclusão do
+							cálculo e dos estudos de impacte ambiental e de viabilidade técnica, económica e financeira, à empresa foi
+							atribuída pela autoridade competente o <em>título de exploração de manganês</em> nº 350/07/01/T.E/ANG –
+							MIREMPET/2020, que é válida até ao ano de 2030.
+						</p>
+						<p class="ingles">
+							In 2019, work began on <em>reassessing the reserves</em> and after completing the calculation and
+							environmental impact studies and technical, economic and financial feasibility, our company was awarded by
+							the competent authority, the <em>manganese exploration title</em> nº 350/07/01/T.E/ANG – MIREMPET/2020,
+							which is valid until the year 2030.
+						</p>
+					</div>
 
 					<div class="sociedade">
 						<h3 class="portugues">Estrutura accionista <br />da sociedade:</h3>
@@ -173,10 +174,7 @@
 						Our management team is made up of professionals with recognized technical capacity, with many years of
 						experience and committed to the values, objectives and other pillars that shape our organization.
 					</p>
-					<img
-						class="foto"
-						src="./css/img/equipe1.png"
-						alt="Mesa de escritório com vários documentos contendo gráficos e planilhas" />
+
 					<img class="grafico" src="./css/img/equipe.png" alt="Organograma da diretoria e comissões da Mn Kitota" />
 				</div>
 			</section>
@@ -218,7 +216,6 @@
 						This constitutes the main infrastructures that transport and sell the produced ore for the national and
 						international markets.
 					</p>
-					<img class="foto" src="./css/img/localizacao2.png" alt="" />
 
 					<picture class="coordenadas">
 						<a
@@ -523,7 +520,7 @@
 							</li>
 						</ul>
 					</div>
-					<form class="formulario" action="./">
+					<form class="formulario" action="./enviar.php" method="post">
 						<div class="forms-nome">
 							<label class="portugues" for="nome">Nome</label>
 							<label class="ingles" for="nome">Name</label>
@@ -547,22 +544,20 @@
 								rows="6"
 								id="mensagem"
 								name="mensagem"
-								placeholder="Como podemos ajudá-lo?"
-								required></textarea>
+								placeholder="Como podemos ajudá-lo?"></textarea>
 							<textarea
 								class="ingles"
 								rows="6"
 								id="mensagem"
 								name="mensagem"
-								placeholder="How can we help you?"
-								required></textarea>
+								placeholder="How can we help you?"></textarea>
 						</div>
 
-						<button class="portugues" type="submit">Enviar Mensagem</button>
-						<button class="ingles" type="submit">Send Message</button>
+						<button class="portugues">Enviar Mensagem</button>
+						<button class="ingles">Send Message</button>
 					</form>
+					<img src="/css/img/contatos.webp" alt="" />
 				</div>
-				<img src="/css/img/contatos.webp" alt="" />
 			</section>
 		</main>
 		<footer class="footer">
@@ -591,7 +586,7 @@
 				<iframe
 					width="100%"
 					height="100%"
-					src="https://www.youtube.com/embed/_KNbu24lzAE?si=Ph42q81VjUZ0NCfH&autoplay=1&mute=1"
+					src="https://www.youtube.com/embed/f4JdHv0nQtQ?si=FCMu7nKTBMQrVZg6&autoplay=1&mute=1"
 					title="YouTube video player"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -600,5 +595,6 @@
 		</section>
 
 		<script type="module" src="./js/script.js"></script>
+		<script src="./js/formulario.js"></script>
 	</body>
 </html>

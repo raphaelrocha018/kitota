@@ -1,7 +1,7 @@
 /* PRODUTOS */
 
 .exploracao {
-    background-color: var(--p1);
+    background-color: var(--p7);
     min-height: 100vh;
     position: relative;
 }
@@ -40,7 +40,7 @@
     grid-row: 1;
     font-family: var(--font-2);
     font-size: 1rem;
-    color: var(--p6);
+    color: var(--p4);
     margin-bottom: 2rem;
 }
 
@@ -51,9 +51,9 @@
 
 .exploracao-conteudo ul li {
     font-family: var(--font-1);
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 500;
-    color: var(--c80);
+    color: var(--p2);
     list-style: circle;
     margin-bottom: .5rem;
     max-width: 47ch;
@@ -62,7 +62,7 @@
 .documentos h3 {
     font-family: var(--font-2);
     font-size: .875rem;
-    color: var(--p7);
+    color: var(--p2);
     margin-bottom: .25rem;
 }
 
@@ -102,7 +102,7 @@
     }
 
     .exploracao-conteudo ul li {
-        font-size: 0.75rem;
+        font-size: 0.875rem;
     }
 
     .documentos h3 {
@@ -120,13 +120,13 @@
     .exploracao-conteudo h2 {
         grid-column: 1;
         grid-row: 1;
-        justify-self: center;
+        justify-self: start;
     }
 
     .exploracao-conteudo ul {
         grid-column: 1;
         grid-row: 2;
-        justify-self: end;
+        justify-self: start;
     }
 
     .exploracao-conteudo > picture {
@@ -148,15 +148,6 @@
 
     .exploracao-conteudo ul {
         justify-self: start;
-    }
-
-    .exploracao-conteudo ul li {
-        font-family: var(--font-1);
-        font-size: 1rem;
-        font-weight: 500;
-        color: var(--c80);
-        list-style: circle;
-        margin-bottom: 1.25rem;
-        max-width: 47ch;
+        margin-bottom: 2rem;
     }
 }

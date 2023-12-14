@@ -21,10 +21,30 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    overflow-y: scroll;
 }
 
 body {
     background-color: var(--p1);
+}
+
+.hidden {
+    display: none;
+}
+
+.stop-scrolling-html {
+    overflow-y: hidden;
+}
+
+.stop-scrolling-body {
+    overflow: hidden;
+    -webkit-overflow-scrolling: none;
+    overscroll-behavior: none;
+    touch-action: none;
+}
+
+.compensate-scrollbar {
+    margin-right: 0.75rem;
 }
 
 /* LINGUAGEM */

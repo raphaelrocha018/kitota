@@ -1,64 +1,15 @@
 /* LOCALIZAÇÃO */
 
 .localizacao {
-    background-color: var(--p2);
+    background: var(--p2) url('/css/img/localizacao-bg.png') no-repeat center;
+    background-size: cover;
     min-height: 100vh;
     position: relative;
 }
 
 .localizacao-conteudo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto 1fr auto;
     padding-top: 10rem;
     padding-bottom: 4rem;
-}
-
-.localizacao-conteudo h2,
-.localizacao-conteudo p {
-    grid-column: 1;
-}
-
-.localizacao .foto {
-    grid-column: 1;
-    grid-row: 5;
-    margin-top: 6rem;
-    border-radius: .75rem;
-}
-
-.coordenadas {
-    grid-column: 2;
-    grid-row: 5;
-    place-self: end;
-}
-
-.mapa {
-    position: absolute;
-    right: 0;
-    top: 10%;
-    z-index: -1;
-}
-
-.mapa > a {
-    cursor: pointer;
-}
-
-.mapa > a:hover > figcaption {
-    color: var(--p5);
-}
-
-.mapa figcaption {
-    position: absolute;
-    padding-top: 14.5rem;
-    padding-inline: 2rem;
-    top: 0rem;
-    left: 12rem;
-
-    font-family: var(--font-2);
-    font-weight: 500;
-    font-size: 1rem;
-    color: var(--p6);
-    cursor: pointer;
 }
 
 .localizacao-conteudo h2 {
@@ -70,11 +21,39 @@
 
 .localizacao-conteudo p {
     font-family: var(--font-1);
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--p7);
-    margin-bottom: 0.5rem;
+    margin-bottom: 4rem;
     max-width: 26rem;
+}
+
+.coordenadas {
+    display: inline-block;
+}
+
+.mapa {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    max-height: 100vh;
+}
+
+.mapa figcaption {
+    position: absolute;
+    bottom: 2rem;
+    left: 5rem;
+
+    font-family: var(--font-2);
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: var(--p6);
+}
+
+.mapa > a > img:hover ~ figcaption {
+    color: var(--p5);
 }
 
 /* RESPONSIVO LOCALIZAÇÃO */
@@ -85,77 +64,49 @@
         padding-bottom: 4rem;
     }
 
-    .localizacao .foto {
-        margin-top: 2rem;
-        max-width: 70%;
-    }
-
-    .mapa {
-        transform: scale(80%) translateX(5.5rem);
-        top: -1rem;
-    }
-
-    .mapa figcaption {
-        padding-top: 15rem;
-        padding-inline: 2rem;
-        font-size: 1rem;
-    }
-
     .localizacao-conteudo h2 {
         font-size: 1rem;
         margin-bottom: 0.75rem;
     }
 
     .localizacao-conteudo p {
-        font-size: 0.75rem;
+        font-size: 0.875rem;
         font-weight: 500;
-        max-width: 22rem;
+        max-width: 28rem;
         line-height: 1.3;
     }
 
-    .localizacao-conteudo picture {
-        margin-top: 3rem;
-        max-width: 75%;
+    .mapa {
+        max-width: 40%;
+    }
+
+    .mapa figcaption {
+        font-size: 1rem;
+        bottom: 1.5rem;
+        left: 3.5rem;
     }
 }
 
 @media (max-width: 1080px) {
-    .localizacao-conteudo {
-        gap: 0 1rem;
-    }
-
-    .localizacao .foto {
+    .coordenadas {
         display: none;
     }
 
     .mapa {
+        max-width: 60%;
+        top: initial;
         transform: initial;
-        top: auto;
         bottom: 0;
-        max-width: 100%;
-    }
-
-    .mapa figcaption {
-        padding-top: 14rem;
     }
 
     .localizacao-conteudo p {
-        grid-column: 1/-1;
         font-size: 0.875rem;
-        max-width: 52%;
-    }
-
-    .localizacao-conteudo picture {
-        margin-top: 3rem;
-        max-width: 75%;
-        grid-column: 1/-1;
-        justify-self: center;
+        max-width: 70%;
     }
 }
 
-@media (max-width: 810px) {
+@media (max-width: 720px) {
     .localizacao-conteudo {
-        grid-template-columns: 1fr;
         padding-bottom: 8rem;
     }
 
@@ -165,34 +116,16 @@
     }
 
     .localizacao-conteudo p {
-        max-width: 37ch;
+        max-width: 100%;
     }
 
-    .localizacao-conteudo .mapa {
-        grid-column: 1;
-        grid-row: 5;
-        max-width: 100%;
-        padding-left: 0;
-        padding-top: 4rem;
-    }
-
-    .localizacao .foto {
-        position: relative;
-        grid-row: 4;
-        margin-top: 2rem;
-        max-width: 100%;
-        top: 0;
-        bottom: 0;
+    .mapa {
+        max-width: 75%;
     }
 
     .mapa figcaption {
-        padding-top: 21rem;
-        left: 6rem;
-    }
-
-    .localizacao-conteudo picture {
-        grid-row: 6;
-        max-width: 100%;
-        margin-top: 4rem;
+        font-size: 0.875rem;
+        bottom: 1rem;
+        left: 2rem;
     }
 }

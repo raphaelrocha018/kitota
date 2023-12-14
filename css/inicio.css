@@ -1,7 +1,7 @@
 /* INICIO */
 
 .inicio {
-    background-image: url('../css/img/slide-inicio/imagem-1.jpg');
+    background: var(--p7) url('../css/img/slide-inicio/imagem-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -29,6 +29,10 @@
     }
 
     60% {
+        background-image: url('../css/img/slide-inicio/imagem-1.jpg');
+    }
+
+    100% {
         background-image: url('../css/img/slide-inicio/imagem-1.jpg');
     }
 
