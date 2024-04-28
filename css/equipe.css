@@ -1,7 +1,7 @@
 /* EQUIPE */
 
 .equipe {
-    background: url('/css/img/equipe-bg.jpg') no-repeat left bottom;
+    background: url('/css/img/equipe-bg.jpg') no-repeat left bottom 30%;
     background-size: contain;
     min-height: 100vh;
     position: relative;
